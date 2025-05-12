@@ -9,17 +9,18 @@ function App() {
   return (
     <BrowserRouter>
       <div className='app'>
+
         <div>
           <div className='pages'>
-            <NavLink to='/about' activeClassName="active">Haqqında</NavLink>
-            <NavLink to='/contactinformation' activeClassName="active">Əlaqə məlumatları</NavLink>
-            <NavLink to='/worksamples' activeClassName="active">İş nümunələri</NavLink>
+            <NavLink to='/Client-routing/about' activeClassName="active">Haqqında</NavLink>
+            <NavLink to='/Client-routing/contactinformation' activeClassName="active">Əlaqə məlumatları</NavLink>
+            <NavLink to='/Client-routing/worksamples' activeClassName="active">İş nümunələri</NavLink>
           </div>
 
           <Routes>
-            <Route path='/about' element={<About />} />
-            <Route path='/contactinformation' element={<ContactInformation />} />
-            <Route path='/worksamples' element={<WorkSamples />} />
+            <Route path='/Client-routing/about' element={<About />} />
+            <Route path='/Client-routing/contactinformation' element={<ContactInformation />} />
+            <Route path='/Client-routing/worksamples' element={<WorkSamples />} />
           </Routes>
         </div>
 
